@@ -81,7 +81,7 @@ func (t Testmcp) StreamAggregatedResources(resourcesServer gcp.AggregatedDiscove
 		TypeUrl: "networking.istio.io/v1alpha3/ServiceEntry",
 		Resources: []*any.Any{
 			{
-				TypeUrl: "istio.io/istio.mcp.v1alpha1.Resource",
+				TypeUrl: "type.googleapis.com/istio.mcp.v1alpha1.Resource",
 				Value:   b.Bytes(),
 			},
 		},
